@@ -1,7 +1,7 @@
 {
     "name": "Coinbay",
     "short_name": "CB",
-    "start_url": "/",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "rgb(0,82,255)",
