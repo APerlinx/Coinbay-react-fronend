@@ -1,18 +1,18 @@
 {
     "name": "Coinbay",
     "short_name": "CB",
-    "start_url": ".",
+    "start_url": "/signup",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "rgb(0,82,255)",
     "icons": [
       {
-        "src": "./src/assets/imgs/cookie.svg",
+        "src": "./public/assets/imgs/cookie.svg",
         "sizes": "192x192",
         "type": "image/svg+xml"
       },
       {
-        "src": "./src/assets/imgs/cookie.svg",
+        "src": "./public/assets/imgs/cookie.svg",
         "sizes": "512x512",
         "type": "image/svg+xml"
       }

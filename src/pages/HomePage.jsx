@@ -4,12 +4,12 @@ import { utilService } from '../services/utilService'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { DonutLoader } from '../cmps/DonutLoader'
-import bitcoinIcon from '../assets/imgs/bitcoin.svg';
-import usdIcon from '../assets/imgs/usd.svg';
-import ethIcon from '../assets/imgs/eth.svg';
-import cardanoIcon from '../assets/imgs/cardano.svg';
-import xrpIcon from '../assets/imgs/xrp.svg';
-import polygonIcon from '../assets/imgs/polygon.svg';
+// import bitcoinIcon from '../assets/imgs/bitcoin.svg';
+// import usdIcon from '../assets/imgs/usd.svg';
+// import ethIcon from '../assets/imgs/eth.svg';
+// import cardanoIcon from '../assets/imgs/cardano.svg';
+// import xrpIcon from '../assets/imgs/xrp.svg';
+// import polygonIcon from '../assets/imgs/polygon.svg';
 
 export function HomePage() {
   const [user, setUser] = useState(null)
@@ -60,13 +60,14 @@ export function HomePage() {
       document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
   }, [user])
-
-  // const bitcoinIcon = utilService.getImgUrl('../assets/imgs/bitcoin.svg')
-  // const usdIcon = utilService.getImgUrl('../assets/imgs/usd.svg')
-  // const ethIcon =  utilService.getImgUrl('../assets/imgs/eth.svg')
-  // const cardanoIcon =  utilService.getImgUrl('../assets/imgs/cardano.svg')
-  // const xrpIcon =  utilService.getImgUrl('../assets/imgs/xrp.svg')
-  // const polygonIcon =  utilService.getImgUrl('../assets/imgs/polygon.svg')
+  
+  const bitcoinIcon = '/assets/imgs/bitcoin.svg';
+  const usdIcon = '/assets/imgs/usd.svg';
+  const ethIcon = '/assets/imgs/eth.svg';
+  const cardanoIcon = '/assets/imgs/cardano.svg';
+  const xrpIcon = '/assets/imgs/xrp.svg';
+  const polygonIcon = '/assets/imgs/polygon.svg';
+  
 
   if (isLoading) {
     return <DonutLoader />
