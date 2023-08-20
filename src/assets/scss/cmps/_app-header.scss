@@ -1,0 +1,21 @@
+.app-header {
+    border:none ;
+    .container {
+        padding: 1em;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-link {
+            margin-inline-end: 1em;
+        }
+
+        .logo {
+            font-size: 22px;
+            letter-spacing: 0.01em;
+        }
+
+    }
+}

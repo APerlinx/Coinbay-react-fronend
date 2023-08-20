@@ -1,0 +1,75 @@
+.contact-edit {
+    max-width: 400px;
+    margin: auto;
+    padding: 40px;
+    padding-top: 0;
+    border-radius: 15px;
+
+    .contact-list-header {
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: $clr1;
+        h1 {
+            margin: 0;
+            color: $clr2;
+        }
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #ddd;
+        margin-bottom: 20px;
+        margin: 0;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    label {
+        display: block;
+        font-size: 14px;
+        color: #555;
+        margin-top: 20px;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 0;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}

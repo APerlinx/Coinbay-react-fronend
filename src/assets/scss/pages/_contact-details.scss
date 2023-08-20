@@ -1,0 +1,90 @@
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 15px;
+
+    .contact-initial {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white;
+    }
+    
+
+    h3 {
+        font-size: 16px;
+        color: $clr4;
+        margin: 10px 0;
+    }
+
+    .name {
+      color: $clr6;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .phone {
+      margin-bottom: 2em;
+      font-size: 14px;
+    }
+
+    button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-inline-start: 1em;
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+
+    .moves {
+        width: 100%;
+        margin: 20px 0;
+      
+        h4 {
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          text-align: left;
+          thead {
+            background-color: #f0f0f0;
+            tr {
+              th {
+                padding: 10px;
+                font-weight: bold;
+                border-bottom: 1px solid #ddd;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+              }
+              &:last-child {
+                td {
+                  border-bottom: none;
+                }
+              }
+            }
+          }
+        }
+      }      
+}

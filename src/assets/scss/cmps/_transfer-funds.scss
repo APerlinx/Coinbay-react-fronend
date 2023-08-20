@@ -1,0 +1,9 @@
+.transfer-fund {
+    display: flex;
+    input {
+        padding: 10px;
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+}

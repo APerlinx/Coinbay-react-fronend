@@ -1,0 +1,100 @@
+.contact-container {
+    position: relative;
+    overflow: hidden;
+
+    .contact-preview {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+        transition: transform 0.3s ease-out;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        background-color: white;
+        // &:last-child {
+        //     border-bottom: none;
+        // }
+
+        .info {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 30px;
+                height: 25px;
+                margin-right: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin: 0;
+                color: #555657;
+            }
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+
+            button {
+                background: none;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .contact-initial {
+        width: 40px; 
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ddd;
+        font-size: 18px;
+        font-weight: 500;
+        margin-inline-end: 1em;
+        color: $clr2;
+    }
+
+    .action-layer {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+
+        span {
+            font-weight: 500;
+            color: $clr2;
+            &.left {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &.right {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

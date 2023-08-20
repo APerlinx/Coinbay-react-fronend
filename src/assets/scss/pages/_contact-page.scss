@@ -1,0 +1,35 @@
+.contact-index {
+  font-family: Arial, sans-serif;
+  // padding: 20px;
+  // padding-inline: 10px;
+  padding-top: 0;
+  margin: 0 auto;
+
+  .contact-list-header {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: $clr1;
+    padding: 10px;
+    margin-bottom: 20px;
+    h2 {
+      margin: 0;
+    }
+  }
+  .contact-list {
+    width: 100%;
+    h3 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+  }
+
+  .contact-filter {
+    margin: 20px 0;
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #e0e0e0;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.move-list {
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+  
+    h2 {
+      text-align: center;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+  
+      thead {
+        background-color: $clr1;
+        color: $clr2;
+        tr {
+          th {
+            padding: 10px;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+          }
+        }
+      }
+  
+      tbody {
+        tr {
+          td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+          }
+  
+          &:last-child {
+            td {
+              border-bottom: none;
+            }
+          }
+  
+          &:nth-child(odd) {
+            background-color: #f4f4f4;
+          }
+  
+          &:hover {
+            background-color: #e0f0ff;
+          }
+        }
+      }
+    }
+  }
+  
